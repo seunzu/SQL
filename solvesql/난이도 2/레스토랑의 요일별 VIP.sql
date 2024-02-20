@@ -1,12 +1,14 @@
 SELECT
-    ROUND(AVG(sub.total), 2) AS 'avg_sales'
+    *
 FROM
-    (
+    tips
+WHERE
+    (day, total_bill) IN (
         SELECT
             day,
-            SUM(total_bill) AS 'total'
+            MAX(total_bill)
         FROM
             tips
         GROUP BY
             day
-    ) AS sub
+    );
