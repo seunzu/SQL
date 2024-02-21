@@ -17,4 +17,7 @@
 - String, Date
 
 ## [solvesql](https://solvesql.com)
-- SQL 데이터 분석 캠프 실전반
+- 연습문제
+  - SQL 데이터 분석캠프 입문반
+  - SQL 데이터 분석캠프 실전반
+
