@@ -1,0 +1,7 @@
+USE programmers_mockTest;
+
+SHOW TABLES;
+
+SELECT * FROM SUBMISSIONS;
+
+SELECT * FROM PROBLEMS2;
