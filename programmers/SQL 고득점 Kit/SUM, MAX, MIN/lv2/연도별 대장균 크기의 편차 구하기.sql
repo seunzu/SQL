@@ -1,0 +1,6 @@
+SELECT
+    YEAR,
+    YEAR_DEV,
+    ID
+FROM ECOLI_DATA
+ORDER BY 1, 2;
