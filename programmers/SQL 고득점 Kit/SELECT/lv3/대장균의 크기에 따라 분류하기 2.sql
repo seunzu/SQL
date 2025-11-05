@@ -1,0 +1,16 @@
+WITH SB AS (
+    SELECT
+        ID,
+        CASE NTILE(4) OVER (ORDER BY SIZE_OF_COLONY DESC)
+            WHEN 1 THEN 'CRITICAL'
+            WHEN 2 THEN 'HIGH'
+            WHEN 3 THEN 'MEDIUM'
+            WHEN 4 THEN 'LOW'
+        END AS COLONY_NAME
+    FROM ECOLI_DATA
+)
+SELECT 
+    ID, 
+    COLONY_NAME
+FROM SB
+ORDER BY 1;
