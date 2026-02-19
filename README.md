@@ -21,3 +21,5 @@
   - SQL 데이터 분석캠프 입문반
   - SQL 데이터 분석캠프 실전반
 
+## [LeetCode](https://leetcode.com/)
+- SQL 50
